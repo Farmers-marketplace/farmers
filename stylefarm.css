@@ -1,0 +1,148 @@
+/* Reset and General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;}
+    
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 25px 0;
+  }
+  
+  header h1 {
+    display: inline-block;
+    font-size: 2rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    float: right;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  /* Form Section */
+  .upload-form, .preorder, .reviews {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form Inputs */
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Product Section */
+  .products {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-item {
+    background-color: #f9f9f9;
+    width: 30%;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-item h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .product-item .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  /* Reviews Section */
+  .reviews-list {
+    margin-top: 20px;
+  }
+  
+  .review-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-item h4 {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    text-align:center;
+  }

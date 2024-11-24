@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmers Marketplace</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-green-600 p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-white text-2xl font-bold">Farmers Marketplace</h1>
+      <ul class="flex space-x-4">
+        <li><a href="farmers_market.html" class="text-white hover:underline">Professional Farmer</a></li>
+        <li><a href="be_farmer.html" class="text-white hover:underline">Be a Farmer</a></li>
+        <li><a href="buy.html" class="text-white hover:underline">Buy from Farmers</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-center py-20 relative">
+    <div class="hero-overlay"></div>
+    <h2 class="text-5xl font-bold mb-4 animate-bounce text-white-500">Grow, Learn and Buy Organic</h2>
+    <p class="text-lg mb-8 text-green-200">Empowering you to start small-scale farming, access organic guidance, or buy fresh produce directly from farmers.</p>
+    <a href="buy.html" class="bg-white text-green-700 font-semibold py-2 px-6 rounded hover:bg-gray-200 z-10 relative">Shop Now</a>
+  </header>
+
+  <!-- Crops Background -->
+  <div class="crops-bg w-full h-40 bg-center bg-cover"></div>
+
+  <!-- Main Content -->
+  <main class="container mx-auto my-12 space-y-8">
+    <!-- Professional Farmer Section -->
+    <section id="professional-farmer" class="bg-white p-6 shadow-lg rounded-lg transition transform hover:-translate-y-1 hover:shadow-2xl">
+      <h3 class="text-3xl font-bold text-green-700 mb-4">Professional Farmer</h3>
+      <p class="text-gray-700 mb-4">Upload your organic products and educate aspiring farmers on sustainable practices.</p>
+      <button class="cta-button bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700"><a href="farmers_market.html">Upload Products</a>
+      </button>
+    </section>
+
+    <!-- Aspiring Farmer Section -->
+    <section id="aspiring-farmer" class="bg-white p-6 shadow-lg rounded-lg transition transform hover:-translate-y-1 hover:shadow-2xl">
+      <h3 class="text-3xl font-bold text-green-700 mb-4">Be a Farmer</h3>
+      <p class="text-gray-700 mb-4">Learn the basics of organic farming, track soil health, and start growing your own food.</p>
+      <button class="cta-button bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700"><a href="be_farmer.html">Get Started</a></button>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section id="marketplace" class="bg-white p-6 shadow-lg rounded-lg transition transform hover:-translate-y-1 hover:shadow-2xl">
+      <h3 class="text-3xl font-bold text-green-700 mb-4">Buy from Farmers</h3>
+      <p class="text-gray-700 mb-4">Browse fresh, organic produce and buy directly from local farmers.</p>
+      <button class="cta-button bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700"><a href="buy.html">Shop Now</a></button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2023 Farmers Marketplace. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

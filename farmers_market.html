@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Farmers Market - Crop Upload</title>
+    <link rel="stylesheet" href="stylefarm.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Farmers Market</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Upload Product</a></li>
+                    <li><a href="#">Products</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Farmer Upload Section -->
+        <section class="upload-form">
+            <div class="container">
+                <h2>Upload Your Crop</h2>
+                <form id="product-form">
+                    <label for="product-name">Crop Name:</label>
+                    <input type="text" id="product-name" name="product-name" required>
+
+                    <label for="product-description">Crop Description:</label>
+                    <textarea id="product-description" name="product-description" rows="4" required></textarea>
+
+                    <label for="product-soil">Soil Type:</label>
+                    <input type="text" id="product-soil" name="product-soil" required>
+
+                    <label for="product-price">Price (per unit):</label>
+                    <input type="number" id="product-price" name="product-price" required>
+
+                    <label for="product-stock">Stock Quantity:</label>
+                    <input type="number" id="product-stock" name="product-stock" required>
+
+                    <label for="product-image">Crop Image URL:</label>
+                    <input type="url" id="product-image" name="product-image" required>
+
+                    <button type="submit">Upload Crop</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Product Display Section -->
+        <section class="products">
+            <div class="container">
+                <h2>Available Crops</h2>
+                <div id="product-list" class="product-list">
+                    <!-- Dynamic Product Items will appear here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Pre-order Section -->
+        <section class="preorder">
+            <div class="container">
+                <h2>Pre-order Your Crop</h2>
+                <form id="preorder-form">
+                    <label for="preorder-name">Your Name:</label>
+                    <input type="text" id="preorder-name" name="preorder-name" required>
+
+                    <label for="preorder-email">Your Email:</label>
+                    <input type="email" id="preorder-email" name="preorder-email" required>
+
+                    <label for="preorder-quantity">Quantity:</label>
+                    <input type="number" id="preorder-quantity" name="preorder-quantity" required>
+
+                    <button type="submit">Place Pre-order</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Product Reviews Section -->
+        <section class="reviews">
+            <div class="container">
+                <h2>Product Reviews</h2>
+                <form id="review-form">
+                    <label for="reviewer-name">Your Name:</label>
+                    <input type="text" id="reviewer-name" name="reviewer-name" required>
+
+                    <label for="review-message">Your Review:</label>
+                    <textarea id="review-message" name="review-message" rows="4" required></textarea>
+
+                    <button type="submit">Submit Review</button>
+                </form>
+
+                <div id="reviews-list" class="reviews-list">
+                    <!-- Reviews will be displayed here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Farmers Market. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
